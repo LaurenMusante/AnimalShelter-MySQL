@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Animals</title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+    <link href="~/css/styles.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="container">
+<h1>List Animals</h1>
+
+<h2>@Model["animal"].Type</h2>
+<h2>@Model["animal"].Name</h2>
+<h2>@Model["animal"].Gender</h2>
+<h2>@Model["animal"].AdmittanceDate</h2>
+<h2>@Model["animal"].Breed</h2>
+
+
+<a href='/animals/new'>Add another Animal</a>
+<a href='/animals'>View all Animals</a>
+</div>
+</body>
+</html>
