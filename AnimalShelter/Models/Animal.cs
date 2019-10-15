@@ -14,3 +14,5 @@ namespace AnimalShelter.Models
 
     }
 }
+
+//these need to line up exactly with column names in WorkBench
