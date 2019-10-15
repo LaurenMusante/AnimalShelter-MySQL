@@ -16,7 +16,7 @@ namespace AnimalShelter.Controllers
 
     public ActionResult Index()
     {
-      List<Animal> model = _db.Animals.ToList();
+      List<Animal> model = _db.Animals.OrderBy(animal => animal.Name).ToList(); // Order each animal (coming from DB animals) and sort them by the Name column in the animals table. OrderBy has a default of OrderByAscending (vs. OrderByDescending)
       return View(model);
     }
 
